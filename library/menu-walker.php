@@ -3,7 +3,6 @@
  * Customize the output of menus for Foundation top bar
  *
  * @package FoundationPress
- * @since FoundationPress 1.0
  */
 
 if ( ! class_exists( 'Foundationpress_Top_Bar_Walker' ) ) :

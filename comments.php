@@ -6,7 +6,6 @@
  * and the comment form.
  *
  * @package FoundationPress
- * @since FoundationPress 1.0
  */
 
 if ( have_comments() ) :

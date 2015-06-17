@@ -11,7 +11,6 @@
  *
  * @link https://codex.wordpress.org/Theme_Development
  * @package FoundationPress
- * @since FoundationPress 1.0
  */
 
 /** Various clean up functions */

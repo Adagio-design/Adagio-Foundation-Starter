@@ -3,7 +3,6 @@
  * Template part for top bar menu
  *
  * @package FoundationPress
- * @since FoundationPress 1.0
  */
 
 ?>
