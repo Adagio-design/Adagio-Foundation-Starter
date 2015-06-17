@@ -2,8 +2,7 @@
 /**
  * Customize the output of menus for Foundation off-canvas menu with multi-level support
  *
- * @package WordPress
- * @subpackage FoundationPress
+ * @package FoundationPress
  * @since FoundationPress 1.0
  */
 
