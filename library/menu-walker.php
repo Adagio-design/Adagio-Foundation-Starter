@@ -2,7 +2,7 @@
 /**
  * Customize the output of menus for Foundation top bar
  *
- * @package FoundationPress
+ * @package Adagio-Foundation-Starter
  */
 
 if ( ! class_exists( 'Foundationpress_Top_Bar_Walker' ) ) :

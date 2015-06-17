@@ -2,7 +2,7 @@
 /**
  * Clean up WordPress defaults
  *
- * @package FoundationPress
+ * @package Adagio-Foundation-Starter
  */
 
 if ( ! function_exists( 'foundationpress_start_cleanup' ) ) :

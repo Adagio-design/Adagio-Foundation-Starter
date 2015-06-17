@@ -2,7 +2,7 @@
 /**
  * Foundation PHP template
  *
- * @package FoundationPress
+ * @package Adagio-Foundation-Starter
  */
 
 // Pagination.

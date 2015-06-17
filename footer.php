@@ -4,7 +4,7 @@
  *
  * Contains the closing of the "off-canvas-wrap" div and all content after.
  *
- * @package FoundationPress
+ * @package Adagio-Foundation-Starter
  */
 
 ?>

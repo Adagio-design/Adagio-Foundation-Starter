@@ -2,7 +2,7 @@
 /**
  * Template part for top bar menu
  *
- * @package FoundationPress
+ * @package Adagio-Foundation-Starter
  */
 
 ?>

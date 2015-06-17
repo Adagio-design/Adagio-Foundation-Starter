@@ -2,7 +2,7 @@
 /**
  * Register theme support for languages, menus, post-thumbnails, post-formats etc.
  *
- * @package FoundationPress
+ * @package Adagio-Foundation-Starter
  */
 
 if ( ! function_exists( 'foundationpress_theme_support' ) ) :

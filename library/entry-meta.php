@@ -2,7 +2,7 @@
 /**
  * Entry meta information for posts
  *
- * @package FoundationPress
+ * @package Adagio-Foundation-Starter
  */
 
 if ( ! function_exists( 'foundationpress_entry_meta' ) ) :

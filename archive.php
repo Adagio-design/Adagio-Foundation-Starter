@@ -11,7 +11,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package FoundationPress
+ * @package Adagio-Foundation-Starter
  */
 
 get_header(); ?>

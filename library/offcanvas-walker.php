@@ -2,7 +2,7 @@
 /**
  * Customize the output of menus for Foundation off-canvas menu with multi-level support
  *
- * @package FoundationPress
+ * @package Adagio-Foundation-Starter
  */
 
 if ( ! class_exists( 'Foundationpress_Offcanvas_Walker' ) ) :

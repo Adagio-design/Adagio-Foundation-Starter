@@ -3,7 +3,7 @@
  * Register Menus
  *
  * @link http://codex.wordpress.org/Function_Reference/register_nav_menus#Examples
- * @package FoundationPress
+ * @package Adagio-Foundation-Starter
  */
 
 register_nav_menus(array(

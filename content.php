@@ -4,7 +4,7 @@
  *
  * Used for both single and index/archive/search.
  *
- * @package FoundationPress
+ * @package Adagio-Foundation-Starter
  */
 
 ?>
