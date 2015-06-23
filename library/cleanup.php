@@ -26,7 +26,6 @@ function adagio_foundation_starter_start_cleanup() {
 	// Additional post related cleaning.
 	add_filter( 'get_adagio_foundation_starter_image_tag_class', 'adagio_foundation_starter_image_tag_class', 0, 4 );
 	add_filter( 'get_image_tag', 'adagio_foundation_starter_image_editor', 0, 4 );
-	add_filter( 'the_content', 'img_unautop', 30 );
 
 }
 add_action( 'after_setup_theme','adagio_foundation_starter_start_cleanup' );
@@ -189,14 +188,6 @@ function adagio_foundation_starter_image_editor($html, $id, $alt, $title) {
 			'alt="' . $title . '"',
 		),
 		$html);
-}
-endif;
-
-// Wrap images with figure tag - Credit: Robert O'Rourke - http://bit.ly/1q0WHFs .
-if ( ! function_exists( 'img_unauto' ) ) :
-function img_unautop($pee) {
-	$pee = preg_replace( '/<p>\\s*?(<a .*?><img.*?><\\/a>|<img.*?>)?\\s*<\\/p>/s', '<figure>$1</figure>', $pee );
-	return $pee;
 }
 endif;
 
