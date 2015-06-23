@@ -190,5 +190,3 @@ function adagio_foundation_starter_image_editor($html, $id, $alt, $title) {
 		$html);
 }
 endif;
-
-?>

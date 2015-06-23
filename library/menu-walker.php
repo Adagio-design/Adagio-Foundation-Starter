@@ -42,4 +42,3 @@ class Adagio_Foundation_Starter_Top_Bar_Walker extends Walker_Nav_Menu {
 
 }
 endif;
-?>

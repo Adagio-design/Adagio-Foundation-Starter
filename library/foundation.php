@@ -187,5 +187,3 @@ class Adagio_Foundation_Starter_Comments extends Walker_Comment{
     <?php }
 }
 endif;
-
-?>

@@ -35,4 +35,3 @@ class Adagio_Foundation_Starter_Offcanvas_Walker extends Walker_Nav_Menu {
 
 }
 endif;
-?>

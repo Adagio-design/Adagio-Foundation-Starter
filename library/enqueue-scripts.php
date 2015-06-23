@@ -40,5 +40,3 @@ if ( ! function_exists( 'adagio_foundation_starter_scripts' ) ) :
 
 	add_action( 'wp_enqueue_scripts', 'adagio_foundation_starter_scripts' );
 endif;
-
-?>

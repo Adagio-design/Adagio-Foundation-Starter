@@ -30,4 +30,3 @@ function adagio_foundation_starter_sidebar_widgets() {
 
 add_action( 'widgets_init', 'adagio_foundation_starter_sidebar_widgets' );
 endif;
-?>

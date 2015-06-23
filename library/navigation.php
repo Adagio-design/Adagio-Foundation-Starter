@@ -252,5 +252,3 @@ function adagio_foundation_starter_breadcrumb($showhome = true, $separatorclass 
     }
     echo '</ul>';
 }
-
-?>

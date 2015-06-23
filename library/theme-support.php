@@ -26,4 +26,3 @@ function adagio_foundation_starter_theme_support() {
 
 add_action( 'after_setup_theme', 'adagio_foundation_starter_theme_support' );
 endif;
-?>
