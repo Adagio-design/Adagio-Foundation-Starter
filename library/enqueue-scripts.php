@@ -8,8 +8,8 @@
  * @package Adagio-Foundation-Starter
  */
 
-if ( ! function_exists( 'foundationpress_scripts' ) ) :
-	function foundationpress_scripts() {
+if ( ! function_exists( 'adagio_foundation_starter_scripts' ) ) :
+	function adagio_foundation_starter_scripts() {
 
 	// Enqueue the main Stylesheet.
 	wp_enqueue_style( 'main-stylesheet', get_stylesheet_directory_uri() . '/css/foundation.css' );
@@ -38,7 +38,7 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 
 	}
 
-	add_action( 'wp_enqueue_scripts', 'foundationpress_scripts' );
+	add_action( 'wp_enqueue_scripts', 'adagio_foundation_starter_scripts' );
 endif;
 
 ?>
