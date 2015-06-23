@@ -5,8 +5,8 @@
  * @package Adagio-Foundation-Starter
  */
 
-if ( ! class_exists( 'Foundationpress_Top_Bar_Walker' ) ) :
-class Foundationpress_Top_Bar_Walker extends Walker_Nav_Menu {
+if ( ! class_exists( 'Adagio_Foundation_Starter_Top_Bar_Walker' ) ) :
+class Adagio_Foundation_Starter_Top_Bar_Walker extends Walker_Nav_Menu {
 
 	function display_element( $element, &$children_elements, $max_depth, $depth = 0, $args, &$output ) {
 		$element->has_children = ! empty( $children_elements[ $element->ID ] );
