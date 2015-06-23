@@ -31,7 +31,7 @@ if ( ! function_exists( 'foundationpress_top_bar_l' ) ) {
 	        'link_after' => '',                             // After each link text
 	        'depth' => 5,                                   // Limit the depth of the nav
 	        'fallback_cb' => false,                         // Fallback function (see below)
-	        'walker' => new Foundationpress_Top_Bar_Walker(),
+	        'walker' => new Adagio_Foundation_Starter_Top_Bar_Walker(),
 	    ));
 	}
 }
@@ -53,7 +53,7 @@ if ( ! function_exists( 'foundationpress_top_bar_r' ) ) {
 	        'link_after' => '',                             // After each link text
 	        'depth' => 5,                                   // Limit the depth of the nav
 	        'fallback_cb' => false,                         // Fallback function (see below)
-	        'walker' => new Foundationpress_Top_Bar_Walker(),
+	        'walker' => new Adagio_Foundation_Starter_Top_Bar_Walker(),
 	    ));
 	}
 }
@@ -75,7 +75,7 @@ if ( ! function_exists( 'foundationpress_mobile_off_canvas' ) ) {
 	        'link_after' => '',                             // After each link text
 	        'depth' => 5,                                   // Limit the depth of the nav
 	        'fallback_cb' => false,                         // Fallback function (see below)
-	        'walker' => new Foundationpress_Offcanvas_Walker(),
+	        'walker' => new Adagio_Foundation_Starter_Offcanvas_Walker(),
 	    ));
 	}
 }
