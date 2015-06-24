@@ -11,7 +11,7 @@
 <!doctype html>
 <html class="no-js" <?php language_attributes(); ?> >
 	<head>
-		<meta charset="utf-8" />
+		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/favicon.ico" type="image/x-icon">
