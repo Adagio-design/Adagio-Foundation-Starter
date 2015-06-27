@@ -17,6 +17,7 @@ module.exports = function(grunt) {
 				options: {
 					outputStyle: 'compressed',
 				},
+
 				files: {
 					'css/foundation.css': 'scss/foundation.scss',
 				},
@@ -38,30 +39,29 @@ module.exports = function(grunt) {
 				src: ['**', '!**/less/**', '!**/css/**', '!bower.json'],
 				dest: 'assets/fontawesome/',
 			},
-
 		},
 
-			'string-replace': {
-
-				fontawesome: {
-					files: {
-						'assets/fontawesome/scss/_variables.scss': 'assets/fontawesome/scss/_variables.scss',
-					},
-					options: {
-						replacements: [
-							{
-								pattern: '../fonts',
-								replacement: '../assets/fontawesome/fonts',
-							},
-						],
-					},
+		'string-replace': {
+			fontawesome: {
+				files: {
+					'assets/fontawesome/scss/_variables.scss': 'assets/fontawesome/scss/_variables.scss',
+				},
+				options: {
+					replacements: [
+						{
+							pattern: '../fonts',
+							replacement: '../assets/fontawesome/fonts',
+						},
+					],
 				},
 			},
+		},
 
 		concat: {
 			options: {
 				separator: ';',
 			},
+
 			dist: {
 				src: [
 
@@ -106,29 +106,29 @@ module.exports = function(grunt) {
 
 		watch: {
 			grunt: {
-					files: ['Gruntfile.js'],
-				},
+				files: ['Gruntfile.js'],
+			},
 
 			sass: {
 				files: 'scss/**/*.scss',
 				tasks: ['sass'],
 				options: {
-						livereload:true,
-						},
+					livereload: true,
+				},
 			},
 
 			js: {
 				files: 'js/custom/**/*.js',
 				tasks: ['concat', 'uglify'],
 				options: {
-					livereload:true,
+					livereload: true,
 				},
 			},
 
-			 all: {
+			all: {
 				files: '**/*.php',
 				options: {
-					livereload:true,
+					livereload: true,
 				},
 			},
 		},
