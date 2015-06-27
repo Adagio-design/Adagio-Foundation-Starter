@@ -10,17 +10,17 @@ module.exports = function(grunt) {
         // If you can't get source maps to work, run the following command in your terminal:
         // $ sass scss/foundation.scss:css/foundation.css --sourcemap
         // (see this link for details: http://thesassway.com/intermediate/using-source-maps-with-sass )
-        sourceMap: true
+        sourceMap: true,
       },
 
       dist: {
         options: {
-          outputStyle: 'compressed'
+          outputStyle: 'compressed',
         },
         files: {
-          'css/foundation.css': 'scss/foundation.scss'
-        }
-      }
+          'css/foundation.css': 'scss/foundation.scss',
+        },
+      },
     },
 
     copy: {
@@ -29,14 +29,14 @@ module.exports = function(grunt) {
         cwd: 'bower_components/foundation/js/vendor/',
         src: '**',
         flatten: 'true',
-        dest: 'js/vendor/'
+        dest: 'js/vendor/',
       },
 
       iconfonts: {
         expand: true,
         cwd: 'bower_components/fontawesome/',
         src: ['**', '!**/less/**', '!**/css/**', '!bower.json'],
-        dest: 'assets/fontawesome/'
+        dest: 'assets/fontawesome/',
       },
 
     },
@@ -46,16 +46,16 @@ module.exports = function(grunt) {
 
         fontawesome: {
           files: {
-            'assets/fontawesome/scss/_variables.scss': 'assets/fontawesome/scss/_variables.scss'
+            'assets/fontawesome/scss/_variables.scss': 'assets/fontawesome/scss/_variables.scss',
           },
           options: {
             replacements: [
               {
                 pattern: '../fonts',
-                replacement: '../assets/fontawesome/fonts'
-              }
-            ]
-          }
+                replacement: '../assets/fontawesome/fonts',
+              },
+            ],
+          },
         },
       },
 
@@ -88,7 +88,7 @@ module.exports = function(grunt) {
           'bower_components/foundation/js/foundation/foundation.topbar.js',
 
           // Include your own custom scripts (located in the custom folder)
-          'js/custom/*.js'
+          'js/custom/*.js',
 
           ],
           // Finally, concatinate all the files above into one single file
@@ -100,20 +100,22 @@ module.exports = function(grunt) {
       dist: {
         files: {
           // Shrink the file size by removing spaces
-          'js/foundation.js': ['js/foundation.js']
-        }
-      }
+          'js/foundation.js': ['js/foundation.js'],
+        },
+      },
     },
 
     watch: {
-      grunt: { files: ['Gruntfile.js'] },
+      grunt: {
+          files: ['Gruntfile.js'],
+        },
 
       sass: {
         files: 'scss/**/*.scss',
         tasks: ['sass'],
         options: {
               livereload:true,
-            }
+            },
       },
 
       js: {
@@ -121,16 +123,16 @@ module.exports = function(grunt) {
         tasks: ['concat', 'uglify'],
         options: {
           livereload:true,
-        }
+        },
       },
 
        all: {
         files: '**/*.php',
         options: {
             livereload:true,
-        }
-      }
-    }
+        },
+      },
+    },
   });
 
   grunt.loadNpmTasks('grunt-sass');
