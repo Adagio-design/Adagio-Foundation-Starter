@@ -5,8 +5,8 @@
  * @package Adagio-Foundation-Starter
  */
 
-if ( ! function_exists( 'foundationpress_theme_support' ) ) :
-function foundationpress_theme_support() {
+if ( ! function_exists( 'adagio_foundation_starter_theme_support' ) ) :
+function adagio_foundation_starter_theme_support() {
 	// Add language support
 	load_theme_textdomain( 'adagio-foundation-starter', get_template_directory() . '/languages' );
 
@@ -29,5 +29,5 @@ function foundationpress_theme_support() {
 	add_theme_support( 'woocommerce' );
 }
 
-add_action( 'after_setup_theme', 'foundationpress_theme_support' );
+add_action( 'after_setup_theme', 'adagio_foundation_starter_theme_support' );
 endif;

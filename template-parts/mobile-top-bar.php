@@ -8,5 +8,5 @@
 ?>
 
 <nav class="vertical menu" role="navigation">
-  <?php foundationpress_mobile_nav(); ?>
+  <?php adagio_foundation_starter_mobile_nav(); ?>
 </nav>

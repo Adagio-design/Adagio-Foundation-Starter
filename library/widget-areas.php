@@ -5,8 +5,8 @@
  * @package Adagio-Foundation-Starter
  */
 
-if ( ! function_exists( 'foundationpress_sidebar_widgets' ) ) :
-function foundationpress_sidebar_widgets() {
+if ( ! function_exists( 'adagio_foundation_starter_sidebar_widgets' ) ) :
+function adagio_foundation_starter_sidebar_widgets() {
 	register_sidebar(array(
 	  'id' => 'sidebar-widgets',
 	  'name' => __( 'Sidebar widgets', 'adagio-foundation-starter' ),
@@ -28,5 +28,5 @@ function foundationpress_sidebar_widgets() {
 	));
 }
 
-add_action( 'widgets_init', 'foundationpress_sidebar_widgets' );
+add_action( 'widgets_init', 'adagio_foundation_starter_sidebar_widgets' );
 endif;

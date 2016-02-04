@@ -17,8 +17,8 @@ register_nav_menus(array(
  *
  * @link http://codex.wordpress.org/Function_Reference/wp_nav_menu
  */
-if ( ! function_exists( 'foundationpress_top_bar_r' ) ) {
-	function foundationpress_top_bar_r() {
+if ( ! function_exists( 'adagio_foundation_starter_top_bar_r' ) ) {
+	function adagio_foundation_starter_top_bar_r() {
 		wp_nav_menu( array(
 			'container'      => false,
 			'menu_class'     => 'dropdown menu',
@@ -35,8 +35,8 @@ if ( ! function_exists( 'foundationpress_top_bar_r' ) ) {
 /**
  * Mobile navigation - topbar (default) or offcanvas
  */
-if ( ! function_exists( 'foundationpress_mobile_nav' ) ) {
-	function foundationpress_mobile_nav() {
+if ( ! function_exists( 'adagio_foundation_starter_mobile_nav' ) ) {
+	function adagio_foundation_starter_mobile_nav() {
 		wp_nav_menu( array(
 			'container'      => false,                         // Remove nav container
 			'menu'           => __( 'mobile-nav', 'adagio-foundation-starter' ),
@@ -57,14 +57,14 @@ if ( ! function_exists( 'foundationpress_mobile_nav' ) ) {
  * 3) On your menu item, type 'has-form' in the CSS-classes field. Type 'button' in the XFN field
  * 4) Save Menu. Your menu item will now appear as a button in your top-menu
 */
-if ( ! function_exists( 'foundationpress_add_menuclass' ) ) {
-	function foundationpress_add_menuclass( $ulclass ) {
+if ( ! function_exists( 'adagio_foundation_starter_add_menuclass' ) ) {
+	function adagio_foundation_starter_add_menuclass( $ulclass ) {
 		$find = array('/<a rel="button"/', '/<a title=".*?" rel="button"/');
 		$replace = array('<a rel="button" class="button"', '<a rel="button" class="button"');
 
 		return preg_replace( $find, $replace, $ulclass, 1 );
 	}
-	add_filter( 'wp_nav_menu','foundationpress_add_menuclass' );
+	add_filter( 'wp_nav_menu','adagio_foundation_starter_add_menuclass' );
 }
 
 
@@ -75,8 +75,8 @@ if ( ! function_exists( 'foundationpress_add_menuclass' ) ) {
  * @param bool $separatorclass should a separator class be added (in case :before is not an option).
  */
 
-if ( ! function_exists( 'foundationpress_breadcrumb' ) ) {
-	function foundationpress_breadcrumb( $showhome = true, $separatorclass = false ) {
+if ( ! function_exists( 'adagio_foundation_starter_breadcrumb' ) ) {
+	function adagio_foundation_starter_breadcrumb( $showhome = true, $separatorclass = false ) {
 
 		// Settings
 		$separator  = '&gt;';

@@ -5,34 +5,34 @@
  * @package Adagio-Foundation-Starter
  */
 
-if ( ! function_exists( 'foundationpress_start_cleanup' ) ) :
-function foundationpress_start_cleanup() {
+if ( ! function_exists( 'adagio_foundation_starter_start_cleanup' ) ) :
+function adagio_foundation_starter_start_cleanup() {
 
 	// Launching operation cleanup.
-	add_action( 'init', 'foundationpress_cleanup_head' );
+	add_action( 'init', 'adagio_foundation_starter_cleanup_head' );
 
 	// Remove WP version from RSS.
-	add_filter( 'the_generator', 'foundationpress_remove_rss_version' );
+	add_filter( 'the_generator', 'adagio_foundation_starter_remove_rss_version' );
 
 	// Remove pesky injected css for recent comments widget.
-	add_filter( 'wp_head', 'foundationpress_remove_wp_widget_recent_comments_style', 1 );
+	add_filter( 'wp_head', 'adagio_foundation_starter_remove_wp_widget_recent_comments_style', 1 );
 
 	// Clean up comment styles in the head.
-	add_action( 'wp_head', 'foundationpress_remove_recent_comments_style', 1 );
+	add_action( 'wp_head', 'adagio_foundation_starter_remove_recent_comments_style', 1 );
 
 	// Clean up gallery output in wp.
-	add_filter( 'foundationpress_gallery_style', 'foundationpress_gallery_style' );
+	add_filter( 'adagio_foundation_starter_gallery_style', 'adagio_foundation_starter_gallery_style' );
 
 }
-add_action( 'after_setup_theme','foundationpress_start_cleanup' );
+add_action( 'after_setup_theme','adagio_foundation_starter_start_cleanup' );
 endif;
 /**
  * Clean up head.+
  * ----------------------------------------------------------------------------
  */
 
-if ( ! function_exists( 'foundationpress_cleanup_head' ) ) :
-function foundationpress_cleanup_head() {
+if ( ! function_exists( 'adagio_foundation_starter_cleanup_head' ) ) :
+function adagio_foundation_starter_cleanup_head() {
 
 	// EditURI link.
 	remove_action( 'wp_head', 'rsd_link' );
@@ -76,13 +76,13 @@ function foundationpress_cleanup_head() {
 endif;
 
 // Remove WP version from RSS.
-if ( ! function_exists( 'foundationpress_remove_rss_version' ) ) :
-function foundationpress_remove_rss_version() { return ''; }
+if ( ! function_exists( 'adagio_foundation_starter_remove_rss_version' ) ) :
+function adagio_foundation_starter_remove_rss_version() { return ''; }
 endif;
 
 // Remove injected CSS for recent comments widget.
-if ( ! function_exists( 'foundationpress_remove_wp_widget_recent_comments_style' ) ) :
-function foundationpress_remove_wp_widget_recent_comments_style() {
+if ( ! function_exists( 'adagio_foundation_starter_remove_wp_widget_recent_comments_style' ) ) :
+function adagio_foundation_starter_remove_wp_widget_recent_comments_style() {
 	if ( has_filter( 'wp_head', 'wp_widget_recent_comments_style' ) ) {
 	  remove_filter( 'wp_head', 'wp_widget_recent_comments_style' );
 	}
@@ -90,8 +90,8 @@ function foundationpress_remove_wp_widget_recent_comments_style() {
 endif;
 
 // Remove injected CSS from recent comments widget.
-if ( ! function_exists( 'foundationpress_remove_recent_comments_style' ) ) :
-function foundationpress_remove_recent_comments_style() {
+if ( ! function_exists( 'adagio_foundation_starter_remove_recent_comments_style' ) ) :
+function adagio_foundation_starter_remove_recent_comments_style() {
 	global $wp_widget_factory;
 	if ( isset($wp_widget_factory->widgets['WP_Widget_Recent_Comments']) ) {
 	remove_action( 'wp_head', array($wp_widget_factory->widgets['WP_Widget_Recent_Comments'], 'recent_comments_style') );
@@ -100,8 +100,8 @@ function foundationpress_remove_recent_comments_style() {
 endif;
 
 // Remove injected CSS from gallery.
-if ( ! function_exists( 'foundationpress_gallery_style' ) ) :
-function foundationpress_gallery_style( $css ) {
+if ( ! function_exists( 'adagio_foundation_starter_gallery_style' ) ) :
+function adagio_foundation_starter_gallery_style( $css ) {
 	return preg_replace( "!<style type='text/css'>(.*?)</style>!s", '', $css );
 }
 endif;
@@ -242,12 +242,12 @@ if ( ! class_exists( 'Adagio_Foundation_Starter_img_rebuilder' ) ) :
 	  }
 	}
 
-	$foundationpress_img_rebuilder = new Adagio_Foundation_Starter_img_rebuilder;
+	$adagio_foundation_starter_img_rebuilder = new Adagio_Foundation_Starter_img_rebuilder;
 
 endif;
 
 // Add WooCommerce support for wrappers per http://docs.woothemes.com/document/third-party-custom-theme-compatibility/
 remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
-add_action('woocommerce_before_main_content', 'foundationpress_before_content', 10);
+add_action('woocommerce_before_main_content', 'adagio_foundation_starter_before_content', 10);
 remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
-add_action('woocommerce_after_main_content', 'foundationpress_after_content', 10);
+add_action('woocommerce_after_main_content', 'adagio_foundation_starter_after_content', 10);

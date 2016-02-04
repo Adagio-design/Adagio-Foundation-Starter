@@ -6,8 +6,8 @@
  */
 
 // Pagination.
-if ( ! function_exists( 'foundationpress_pagination' ) ) :
-function foundationpress_pagination() {
+if ( ! function_exists( 'adagio_foundation_starter_pagination' ) ) :
+function adagio_foundation_starter_pagination() {
 	global $wp_query;
 
 	$big = 999999999; // This needs to be an unlikely integer
@@ -45,8 +45,8 @@ endif;
  * A fallback when no navigation is selected by default.
  */
 
-if ( ! function_exists( 'foundationpress_menu_fallback' ) ) :
-function foundationpress_menu_fallback() {
+if ( ! function_exists( 'adagio_foundation_starter_menu_fallback' ) ) :
+function adagio_foundation_starter_menu_fallback() {
 	echo '<div class="alert-box secondary">';
 	// Translators 1: Link to Menus, 2: Link to Customize.
 		printf( __( 'Please assign a menu to the primary menu location under %1$s or %2$s the design.', 'adagio-foundation-starter' ),
@@ -62,22 +62,22 @@ function foundationpress_menu_fallback() {
 endif;
 
 // Add Foundation 'active' class for the current menu item.
-if ( ! function_exists( 'foundationpress_active_nav_class' ) ) :
-function foundationpress_active_nav_class( $classes, $item ) {
+if ( ! function_exists( 'adagio_foundation_starter_active_nav_class' ) ) :
+function adagio_foundation_starter_active_nav_class( $classes, $item ) {
 	if ( 1 == $item->current || true == $item->current_item_ancestor ) {
 		$classes[] = 'active';
 	}
 	return $classes;
 }
-add_filter( 'nav_menu_css_class', 'foundationpress_active_nav_class', 10, 2 );
+add_filter( 'nav_menu_css_class', 'adagio_foundation_starter_active_nav_class', 10, 2 );
 endif;
 
 /**
  * Use the active class of ZURB Foundation on wp_list_pages output.
  * From required+ Foundation http://themes.required.ch.
  */
-if ( ! function_exists( 'foundationpress_active_list_pages_class' ) ) :
-function foundationpress_active_list_pages_class( $input ) {
+if ( ! function_exists( 'adagio_foundation_starter_active_list_pages_class' ) ) :
+function adagio_foundation_starter_active_list_pages_class( $input ) {
 
 	$pattern = '/current_page_item/';
 	$replace = 'current_page_item active';
@@ -86,7 +86,7 @@ function foundationpress_active_list_pages_class( $input ) {
 
 	return $output;
 }
-add_filter( 'wp_list_pages', 'foundationpress_active_list_pages_class', 10, 2 );
+add_filter( 'wp_list_pages', 'adagio_foundation_starter_active_list_pages_class', 10, 2 );
 endif;
 
 if ( ! class_exists( 'Adagio_Foundation_Starter_Comments' ) ) :

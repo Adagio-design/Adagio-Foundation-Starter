@@ -5,12 +5,12 @@
  * @package Adagio-Foundation-Starter
  */
 
-if ( ! function_exists( 'foundationpress_sticky_posts' ) ) :
-function foundationpress_sticky_posts( $classes ) {
+if ( ! function_exists( 'adagio_foundation_starter_sticky_posts' ) ) :
+function adagio_foundation_starter_sticky_posts( $classes ) {
 	$classes = array_diff($classes, array('sticky'));
 	$classes[] = 'wp-sticky';
 	return $classes;
 }
-add_filter('post_class','foundationpress_sticky_posts');
+add_filter('post_class','adagio_foundation_starter_sticky_posts');
 
 endif;

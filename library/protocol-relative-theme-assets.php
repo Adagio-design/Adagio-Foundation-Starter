@@ -85,5 +85,5 @@ if ( ! class_exists( 'Adagio_Foundation_Starter_protocol_relative_theme_assets' 
 		}
 	}
 
-	$foundationpress_protocol_relative_theme_assets = new Adagio_Foundation_Starter_protocol_relative_theme_assets;
+	$adagio_foundation_starter_protocol_relative_theme_assets = new Adagio_Foundation_Starter_protocol_relative_theme_assets;
 endif;
