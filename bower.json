@@ -1,5 +1,5 @@
 {
-  "name": "foundationpress",
+  "name": "adagio-foundation-starter",
   "main": [
     "assets/stylesheets/foundation.css",
     "assets/javascript/foundation.js"

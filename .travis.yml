@@ -1,8 +1,8 @@
-# Travis CI (MIT License) configuration file for the FoundationPress WordPress theme.
+# Travis CI (MIT License) configuration file for the Adagio Foundation Starter WordPress theme.
 # @link https://travis-ci.org/
 
-# For use with the FoundationPress WordPress theme.
-# @link https://github.com/olefredrik/foundationpress
+# For use with the Adagio Foundation Starter WordPress theme.
+# @link https://github.com/Adagio-design/Adagio-Foundation-Starter
 
 # Declare project language.
 # @link http://about.travis-ci.org/docs/user/languages/php/

@@ -1,10 +1,10 @@
 {
-  "name": "foundationpress",
-  "title": "FoundationPress",
-  "version": "2.3.0",
-  "description": "FoundationPress is a WordPress starter theme based on Foundation 6 by Zurb",
+  "name": "adagio-foundation-starter",
+  "title": "Adagio Foundation Starter",
+  "version": "0.2.0",
+  "description": "Adagio Foundation Starter is a WordPress starter theme based on Foundation",
   "keywords": [
-    "FoundationPress",
+    "Adagio Foundation Starter",
     "WordPress",
     "starter theme",
     "Foundation",
@@ -13,13 +13,13 @@
     "customizable",
     "responsive"
   ],
-  "homepage": "http://foundationpress.olefredrik.com/",
-  "bugs": "https://github.com/olefredrik/FoundationPress/issues",
+  "homepage": "https://github.com/Adagio-design/Adagio-Foundation-Starter",
+  "bugs": "https://github.com/Adagio-design/Adagio-Foundation-Starter/issues",
   "license": "MIT",
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/olefredrik/FoundationPress.git"
+    "url": "https://github.com/Adagio-design/Adagio-Foundation-Starter.git"
   },
   "devDependencies": {
     "autoprefixer": "^6.1.0",

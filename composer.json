@@ -1,13 +1,13 @@
 {
-    "name": "olefredrik/foundationpress",
-    "description": "FoundationPress is a WordPress starter theme based on Foundation 6 by Zurb",
+    "name": "Adagio-design/Adagio-Foundation-Starter",
+    "description": "Adagio Foundation Starter is a WordPress starter theme based on Foundation",
     "type": "wordpress-theme",
     "minimum-stability" : "dev",
     "license": "MIT",
     "authors": [
         {
-            "name": "Ole Fredrik Lie",
-            "email": "mail@olefredrik.com"
+            "name": "Adrian Bengtson",
+            "email": "adrian@adagio.se"
         }
     ],
     "require": {
