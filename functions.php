@@ -10,7 +10,7 @@
  * hooks in WordPress to change core functionality.
  *
  * @link https://codex.wordpress.org/Theme_Development
- * @package FoundationPress
+ * @package Adagio-Foundation-Starter
  */
 
 /** Various clean up functions */

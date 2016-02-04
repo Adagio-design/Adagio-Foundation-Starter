@@ -2,7 +2,7 @@
 /**
  * Customize the output of menus for Foundation top bar
  *
- * @package FoundationPress
+ * @package Adagio-Foundation-Starter
  */
 
  // Big thanks to Brett Mason (https://github.com/brettsmason) for the awesome walker

@@ -2,7 +2,7 @@
 /**
  * Protocol Relative Theme Assets
  *
- * @package FoundationPress
+ * @package Adagio-Foundation-Starter
  */
 
 if ( ! class_exists( 'Foundationpress_protocol_relative_theme_assets' ) ) :

@@ -2,7 +2,7 @@
 /**
  * Change the class for sticky posts to .wp-sticky to avoid conflicts with Foundation's Sticky plugin
  *
- * @package FoundationPress
+ * @package Adagio-Foundation-Starter
  */
 
 if ( ! function_exists( 'foundationpress_sticky_posts' ) ) :

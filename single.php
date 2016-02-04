@@ -2,7 +2,7 @@
 /**
  * The template for displaying all single posts and attachments
  *
- * @package FoundationPress
+ * @package Adagio-Foundation-Starter
  */
 
 get_header(); ?>

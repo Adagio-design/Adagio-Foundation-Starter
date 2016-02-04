@@ -2,7 +2,7 @@
 /**
  * Register widget areas
  *
- * @package FoundationPress
+ * @package Adagio-Foundation-Starter
  */
 
 if ( ! function_exists( 'foundationpress_sidebar_widgets' ) ) :

@@ -2,7 +2,7 @@
 /**
  * The sidebar containing the main widget area
  *
- * @package FoundationPress
+ * @package Adagio-Foundation-Starter
  */
 
 ?>
