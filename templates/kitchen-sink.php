@@ -656,4 +656,4 @@ get_header(); ?>
 		</div>
 
 	<?php endwhile; ?>
-<?php get_footer(); ?>
+<?php get_footer();
