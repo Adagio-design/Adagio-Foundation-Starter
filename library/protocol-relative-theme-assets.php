@@ -5,8 +5,8 @@
  * @package Adagio-Foundation-Starter
  */
 
-if ( ! class_exists( 'Foundationpress_protocol_relative_theme_assets' ) ) :
-	class Foundationpress_protocol_relative_theme_assets {
+if ( ! class_exists( 'Adagio_Foundation_Starter_protocol_relative_theme_assets' ) ) :
+	class Adagio_Foundation_Starter_protocol_relative_theme_assets {
 		/**
 		 * Plugin URI: https://github.com/ryanjbonnell/Protocol-Relative-Theme-Assets
 		 * Description: Transforms enqueued CSS and JavaScript theme URLs to use protocol-relative paths.
@@ -85,5 +85,5 @@ if ( ! class_exists( 'Foundationpress_protocol_relative_theme_assets' ) ) :
 		}
 	}
 
-	$foundationpress_protocol_relative_theme_assets = new Foundationpress_protocol_relative_theme_assets;
+	$foundationpress_protocol_relative_theme_assets = new Adagio_Foundation_Starter_protocol_relative_theme_assets;
 endif;

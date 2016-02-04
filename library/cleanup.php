@@ -113,8 +113,8 @@ endif;
 	Source: http://blog.skunkbad.com/wordpress/another-look-at-rebuilding-image-tags
 */
 
-if ( ! class_exists( 'Foundationpress_img_rebuilder' ) ) :
-	class Foundationpress_img_rebuilder {
+if ( ! class_exists( 'Adagio_Foundation_Starter_img_rebuilder' ) ) :
+	class Adagio_Foundation_Starter_img_rebuilder {
 
 	  public $caption_class   = 'wp-caption';
 	  public $caption_p_class = 'wp-caption-text';
@@ -242,7 +242,7 @@ if ( ! class_exists( 'Foundationpress_img_rebuilder' ) ) :
 	  }
 	}
 
-	$foundationpress_img_rebuilder = new Foundationpress_img_rebuilder;
+	$foundationpress_img_rebuilder = new Adagio_Foundation_Starter_img_rebuilder;
 
 endif;
 

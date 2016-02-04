@@ -16,7 +16,7 @@ if ( have_comments() ) :
 
 		wp_list_comments(
 			array(
-				'walker'            => new Foundationpress_Comments(),
+				'walker'            => new Adagio_Foundation_Starter_Comments(),
 				'max_depth'         => '',
 				'style'             => 'ol',
 				'callback'          => null,

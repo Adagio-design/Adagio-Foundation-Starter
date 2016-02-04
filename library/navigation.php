@@ -26,7 +26,7 @@ if ( ! function_exists( 'foundationpress_top_bar_r' ) ) {
 			'theme_location' => 'top-bar-r',
 			'depth'          => 3,
 			'fallback_cb'    => false,
-			'walker'         => new Foundationpress_Top_Bar_Walker(),
+			'walker'         => new Adagio_Foundation_Starter_Top_Bar_Walker(),
 		));
 	}
 }
@@ -44,7 +44,7 @@ if ( ! function_exists( 'foundationpress_mobile_nav' ) ) {
 			'theme_location' => 'mobile-nav',
 			'items_wrap'     => '<ul id="%1$s" class="%2$s" data-accordion-menu>%3$s</ul>',
 			'fallback_cb'    => false,
-			'walker'         => new Foundationpress_Mobile_Walker(),
+			'walker'         => new Adagio_Foundation_Starter_Mobile_Walker(),
 		));
 	}
 }
