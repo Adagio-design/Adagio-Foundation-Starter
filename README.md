@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Adagio-design/Adagio-Foundation-Starter.svg?branch=master)](https://travis-ci.org/Adagio-design/Adagio-Foundation-Starter)
+
 # Adagio Foundation Starter
 
 This theme is a customized WordPress starter theme based on:
