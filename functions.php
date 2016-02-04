@@ -12,9 +12,6 @@
  * @package Adagio-Foundation-Starter
  */
 
-/** Various clean up functions */
-require_once( 'library/cleanup.php' );
-
 /** Required for Foundation to work properly */
 require_once( 'library/foundation.php' );
 
