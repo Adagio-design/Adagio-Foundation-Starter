@@ -1,20 +1,28 @@
 /*
-Theme Name:         FoundationPress
-Theme URI:          http://foundationpress.olefredrik.com
-Github Theme URI:   https://github.com/olefredrik/FoundationPress
-Description:        FoundationPress is a WordPress starter theme based on Foundation 6 by Zurb
-Version:            2.3.0
-Author:             Ole Fredrik Lie
-Author URI:         http://olefredrik.com/
-
+Theme Name:         Adagio Foundation Starter
+Theme URI:          https://github.com/Adagio-design/Adagio-Foundation-Starter
+Description:        Adagio Foundation Starter is a WordPress starter theme with Foundation 
+Version:            0.2.0
+Author:             Adrian Bengtson
+Author URI:         http://www.adagio.se
 License:            MIT License
 License URI:        http://www.opensource.org/licenses/mit-license.php
+Text Domain:        adagio-foundation-starter
+
+This theme is a customized WordPress starter theme based on:
+- Reverie by milohuang (https://github.com/milohuang/reverie)
+- FoundationPress by Ole Fredrik Lie (https://github.com/olefredrik/FoundationPress)
+- Foundation by Zurb (http://foundation.zurb.com/)
+- Underscores by Automattic, Inc (http://underscores.me/)
+
+The purpose of this theme is solely meant as a starter theme for the needs of Adagio design.
+It is NOT designed to serve multiple users with different needs. 
+
 */
 
 /* ----------------------------------------------------------------------------
 
-  Unfortunately WordPress will require a style.css file
-  located in the theme's root folder for stuff to work.
+  WordPress requires a style.css file located in the theme's root folder.
 
   However, we will not be using vanilla CSS. We're using Sass.
 
