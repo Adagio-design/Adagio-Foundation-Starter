@@ -10,7 +10,7 @@ get_header(); ?>
 <div class="row">
 	<div class="small-12 large-8 columns" role="main">
 
-		<h2><?php _e( 'Search Results for', 'foundationpress' ); ?> "<?php echo get_search_query(); ?>"</h2>
+		<h2><?php _e( 'Search Results for', 'adagio-foundation-starter' ); ?> "<?php echo get_search_query(); ?>"</h2>
 
 	<?php if ( have_posts() ) : ?>
 
@@ -26,8 +26,8 @@ get_header(); ?>
 	<?php if ( function_exists( 'foundationpress_pagination' ) ) { foundationpress_pagination(); } else if ( is_paged() ) { ?>
 
 		<nav id="post-nav">
-			<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
-			<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
+			<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'adagio-foundation-starter' ) ); ?></div>
+			<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'adagio-foundation-starter' ) ); ?></div>
 		</nav>
 	<?php } ?>
 
