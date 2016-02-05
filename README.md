@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Adagio-design/Adagio-Foundation-Starter.svg?branch=master)](https://travis-ci.org/Adagio-design/Adagio-Foundation-Starter)
+[![Build Status](https://travis-ci.org/Adagio-design/Adagio-Foundation-Starter.svg?branch=adagio-foundation-starter-v2)](https://travis-ci.org/Adagio-design/Adagio-Foundation-Starter)
 
 # Adagio Foundation Starter
 
