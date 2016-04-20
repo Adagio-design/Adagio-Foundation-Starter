@@ -29,6 +29,9 @@ if ( ! function_exists( 'adagio_foundation_starter_scripts' ) ) :
 			wp_enqueue_script( 'comment-reply' );
 		}
 
+		// Add Google Web Fonts
+		// wp_enqueue_style( 'googleFonts', 'http://fonts.googleapis.com/css?family=Oswald' );
+
 	}
 
 	add_action( 'wp_enqueue_scripts', 'adagio_foundation_starter_scripts' );
