@@ -7,8 +7,10 @@
  */
 
 register_nav_menus(array(
-	'top-bar-r'  => 'Right Top Bar',
-	'mobile-nav' => 'Mobile',
+	'top-bar-r'  => esc_html__( 'Right Top Bar', 'adagio-foundation-starter' ),
+	'mobile-nav' => esc_html__( 'Mobile', 'adagio-foundation-starter' ),
+	'top-nav'    => esc_html__( 'Top navigation', 'adagio-foundation-starter' ),
+	'side-nav'   => esc_html__( 'Side navigation', 'adagio-foundation-starter' ),
 ));
 
 
@@ -35,6 +37,24 @@ if ( ! function_exists( 'adagio_foundation_starter_top_bar_r' ) ) {
 /**
  * Mobile navigation - topbar (default) or offcanvas
  */
+if ( ! function_exists( 'adagio_foundation_starter_top_nav' ) ) {
+	function adagio_foundation_starter_top_nav() {
+		wp_nav_menu( array(
+			'container'      => false,
+			'menu_class'     => 'dropdown menu',
+			'items_wrap'     => '<ul id="%1$s" class="%2$s" data-dropdown-menu>%3$s</ul>',
+			'theme_location' => 'top-nav',
+			'depth'          => 3,
+			'fallback_cb'    => false,
+			'walker'         => new Adagio_Foundation_Starter_Top_Bar_Walker(),
+		));
+	}
+}
+
+
+/**
+ * Mobile navigation - topbar (default) or offcanvas
+ */
 if ( ! function_exists( 'adagio_foundation_starter_mobile_nav' ) ) {
 	function adagio_foundation_starter_mobile_nav() {
 		wp_nav_menu( array(
@@ -45,6 +65,23 @@ if ( ! function_exists( 'adagio_foundation_starter_mobile_nav' ) ) {
 			'items_wrap'     => '<ul id="%1$s" class="%2$s" data-accordion-menu>%3$s</ul>',
 			'fallback_cb'    => false,
 			'walker'         => new Adagio_Foundation_Starter_Mobile_Walker(),
+		));
+	}
+}
+
+/**
+ * Side navigation - left side
+ */
+if ( ! function_exists( 'adagio_foundation_starter_side_nav' ) ) {
+	function adagio_foundation_starter_side_nav() {
+		wp_nav_menu( array(
+			'container'      => false,                         // Remove nav container
+			'menu'           => __( 'side-nav', 'adagio-foundation-starter' ),
+			'menu_class'     => 'vertical menu',
+			'theme_location' => 'side-nav',
+			'items_wrap'     => '<ul id="%1$s" class="%2$s" data-accordion-menu>%3$s</ul>',
+			'fallback_cb'    => false,
+			'walker'         => new Adagio_Foundation_Starter_Side_Nav_Walker(),
 		));
 	}
 }
