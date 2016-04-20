@@ -41,3 +41,6 @@ require_once( 'library/sticky-posts.php' );
 
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/protocol-relative-theme-assets.php' );
+
+/** Add custom post types */
+require_once( 'library/custom-post-types.php' );
