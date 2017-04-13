@@ -8,6 +8,8 @@
 
 get_header(); ?>
 
+<?php get_template_part( 'template-parts/featured-image' ); ?>
+
 <div id="single-post" role="main">
 
 <?php do_action( 'foundationpress_before_content' ); ?>
@@ -19,21 +21,21 @@ get_header(); ?>
 		</header>
 		<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
 		<div class="entry-content">
-
-		<?php if ( has_post_thumbnail() ) : ?>
-			<div class="row">
-				<div class="column">
-					<?php the_post_thumbnail( '', array('class' => 'th') ); ?>
-				</div>
-			</div>
-		<?php endif; ?>
-
-		<?php the_content(); ?>
+			<?php the_content(); ?>
+			<?php edit_post_link( __( 'Edit', 'foundationpress' ), '<span class="edit-link">', '</span>' ); ?>
 		</div>
 		<footer>
-			<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
+			<?php
+				wp_link_pages(
+					array(
+						'before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ),
+						'after'  => '</p></nav>',
+					)
+				);
+			?>
 			<p><?php the_tags(); ?></p>
 		</footer>
+		<?php the_post_navigation(); ?>
 		<?php do_action( 'foundationpress_post_before_comments' ); ?>
 		<?php comments_template(); ?>
 		<?php do_action( 'foundationpress_post_after_comments' ); ?>
