@@ -8,14 +8,14 @@
 
 get_header(); ?>
 
-<div id="page" role="main">
+<div class="main-wrap" role="main">
 
-	<?php do_action( 'foundationpress_before_content' ); ?>
+<?php do_action( 'foundationpress_before_content' ); ?>
 
-	<article <?php post_class('main-content') ?> id="search-results">
-		<header>
-				<h1 class="entry-title"><?php _e( 'Search Results for', 'foundationpress' ); ?> "<?php echo get_search_query(); ?>"</h1>
-		</header>
+<article <?php post_class('main-content') ?> id="search-results">
+	<header>
+	    <h1 class="entry-title"><?php _e( 'Search Results for', 'foundationpress' ); ?> "<?php echo get_search_query(); ?>"</h1>
+	</header>
 
 	<?php if ( have_posts() ) : ?>
 
@@ -42,10 +42,10 @@ get_header(); ?>
 		</nav>
 	<?php endif; ?>
 
-	</article>
+</article>
 
-	<?php do_action( 'foundationpress_after_content' ); ?>
-	<?php get_sidebar(); ?>
+<?php do_action( 'foundationpress_after_content' ); ?>
+<?php get_sidebar(); ?>
 
 </div>
 
